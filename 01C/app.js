@@ -3,14 +3,14 @@ class App
     runApplication()
     {
         console.log("Hello world!");
-        this.appNaam = "App";
-        this.versienummer = 0.1;
-        this.versiedatum = new Date();
-        this.auteur = "Romy van den Heuvel";
-        this.copyright = "copyright";
-        this.distributeur = "Romy van den Heuvel";
-        this.darkmode = true;
-        //console.log("appNaam: " + appNaam + "\nversienummer: " + versienummer + "\nversiedatum: " + versiedatum + "\nauteur: " + auteur + "\ncopyright: " + copyright + "\ndistributeur: " + distributeur + "\ndarkmode: " + darkmode);
+        appNaam = "App";
+        versienummer = 0.1;
+        versiedatum = new Date();
+        auteur = "Romy van den Heuvel";
+        copyright = "copyright";
+        distributeur = "Romy van den Heuvel";
+        darkmode = true;
+        console.log("appNaam: " + appNaam + "\nversienummer: " + versienummer + "\nversiedatum: " + versiedatum + "\nauteur: " + auteur + "\ncopyright: " + copyright + "\ndistributeur: " + distributeur + "\ndarkmode: " + darkmode);
         this.greeting = "Starting up";
     }
 }
