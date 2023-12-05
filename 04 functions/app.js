@@ -4,9 +4,19 @@ function superMooieGlobalFunction()
     console.log("dus je mag mij overal aanroepen");
 }
 
+function argumentsAreHandy(shoutout)
+{
+    console.log("Do you want to give a shoutout?");
+    console.log(shoutout);
+}
+
 superMooieGlobalFunction();
 superMooieGlobalFunction();
 superMooieGlobalFunction();
+
+argumentsAreHandy("Super Shout Out!");
+argumentsAreHandy("Mega Shout Out!");
+argumentsAreHandy("Gigantic Shout Out!");
 
 
 class App
