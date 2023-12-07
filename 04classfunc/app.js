@@ -17,9 +17,35 @@ class App
         console.log("hier: ");
         console.log(aArgument);
     }
+
+    marioFunction()
+    {
+        console.log("MARIO!!");
+    }
+
+    bwahahaFunction()
+    {
+        let bwahaha = "BWAHAHA!!!";
+        return bwahaha;
+    }
+
+    getalFunction(a, b)
+    {
+        let optellen = a + b;
+        return optellen;
+    }
+
+    extraFunction(tekst)
+    {
+        console.log(tekst);
+    }
 }
 
 let app = new App();
 app.runApplication();
 app.newClassFunction();
 app.anotherFunctionWithArguments("mijn argument is iets...");
+app.marioFunction();
+console.log(app.bwahahaFunction());
+console.log(app.getalFunction(3, 6));
+app.extraFunction("WOW!");
