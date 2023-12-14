@@ -65,3 +65,10 @@ headersByCssClass[1].innerText = "reviews";
 headersByCssClass[2].innerText = "commentaar";
 headersByCssClass[3].innerText = "adres";
 headersByCssClass[4].innerText = "socials";
+
+let data = ["nieuws", "reviews", "commentaar", "adres", "socials"];
+
+for(let i = 0; i < data.length; i++)
+{
+    headersByCssClass[i].innerText = i +": "+data[i];
+}
