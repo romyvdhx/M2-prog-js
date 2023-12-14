@@ -46,3 +46,22 @@ for(let i = 0; i < app.artiesten.length; i++)
     let element = app.artiesten[i];
     console.log(i + ": " + element);
 }
+
+let headersByCssClass = document.getElementsByClassName("gameName");
+
+for(let i = 0; i < headersByCssClass.length; i++)
+{
+    let element = headersByCssClass[i].innerText;
+    console.log(element);
+}
+
+for(let i = 0; i < headersByCssClass.length; i++)
+{
+    headersByCssClass[i].innerText = "huh?";
+}
+
+headersByCssClass[0].innerText = "nieuws";
+headersByCssClass[1].innerText = "reviews";
+headersByCssClass[2].innerText = "commentaar";
+headersByCssClass[3].innerText = "adres";
+headersByCssClass[4].innerText = "socials";
