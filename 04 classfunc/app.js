@@ -3,6 +3,13 @@ class App
     runApplication()
     {
         console.log("Hello world!");
+        this.runApplication();
+        this.newClassFunction();
+        //app.anotherFunctionWithArguments("mijn argument is iets...");
+        //app.marioFunction();
+        //console.log(app.bwahahaFunction());
+        //console.log(app.getalFunction(3, 6));
+        //app.extraFunction("WOW!");
         
     }
 
@@ -43,9 +50,3 @@ class App
 
 let app = new App();
 app.runApplication();
-app.newClassFunction();
-app.anotherFunctionWithArguments("mijn argument is iets...");
-app.marioFunction();
-console.log(app.bwahahaFunction());
-console.log(app.getalFunction(3, 6));
-app.extraFunction("WOW!");
