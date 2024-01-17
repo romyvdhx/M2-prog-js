@@ -61,6 +61,26 @@ class App
         g.fillStyle = "green";
         g.fill();
     }
+    tekenKerstBal(g, x, y, z)
+    {
+        g.beginPath();
+        g.fillStyle = "red";
+        g.arc(x,y,z,0,Math.PI*2);
+        g.stroke();
+        g.fill();
+        g.closePath();
+    }
+    tekenPiek(g){
+        g.beginPath();
+        g.fillStyle = "red";
+        g.moveTo(440, 200);
+        g.lineTo(560, 200);
+        g.lineTo(500, 50);
+        g.closePath;
+        g.stroke;
+        g.fill();
+    }
+    
     runApplication()
     {
         console.log("Hello world!");
@@ -70,10 +90,19 @@ class App
         console.log(canvas);
         //this.tekenHuis(g, 20, 20);
         this.tekenKerstBoom(g, 0, 0);
-
+        this.tekenKerstBal(g, 525, 650, 25);
+        this.tekenKerstBal(g, 250, 710, 30);
+        this.tekenKerstBal(g, 470, 400, 23);
+        this.tekenKerstBal(g, 780, 750, 30);
+        this.tekenKerstBal(g, 650, 470, 25);
+        this.tekenKerstBal(g, 375, 760, 20);
+        this.tekenKerstBal(g, 400, 550, 30);
+        this.tekenKerstBal(g, 600, 780, 20);
+        this.tekenKerstBal(g, 670, 570, 20);
+        this.tekenKerstBal(g, 550, 330, 20);
+        this.tekenPiek(g);
     }
 }
 
 let app = new App();
-
 app.runApplication();
